@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'BerninaSans';
+    src: url('fonts/BerninaSans-Web-CondensedBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothamhtf';
+    src: url('fonts/gothamhtf-book-webfont.woff2') format('woff2'),
+    url('fonts/gothamhtf-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+.imgPrincipale{
+    height: 1144px;
+    width: auto;
+}
+
+.etiquette{
+    background-color: #810426;
+    color: #F5FFFF;
+    text-align: center;
+    font-family: 'gothamhtf';
+    font-size: 90%;
+    height: 100px;
+    width: 190px;
+    border-radius: 10px;
+    transform:rotate(20deg); 
+    -ms-transform:rotate(20deg); /* Internet Explorer */
+    -moz-transform:rotate(20deg); /* Firefox */
+    -webkit-transform:rotate(20deg); /* Safari et Chrome */ 
+    -o-transform:rotate(20deg); /* Opera */
+}
+
+.containerEtiquette{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+p > span {
+    font-size: 50%;
+}
+
+.container{
+    margin: auto;
+    width: 60%;
+    /*background-color: rgb(131, 154, 161);*/
+    position: relative;
+}
+
+.containerLogoRdv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonRDV{
+    font-family: 'gothamhtf';
+    color: #0A4759;
+    font-size: 30px;
+    background: #F7FFFF;
+    border: solid #0A4759 2px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.containerTexte{
+    text-align: center;
+    color: #02465B;
+    font-family: 'BerninaSans';   
+}
+
+.iceExp{
+    text-align: right;
+    color: #02465B;
+    font-family: 'gothamhtf';
+
+}
+
+.containerImg{
+    color: #02465B;
+    font-family: 'gothamhtf';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.roundedImg{
+    overflow:hidden;
+    -webkit-border-radius:150px;;
+    -moz-border-radius:150px;;
+    border-radius:150px;;
+    width:250px;
+    height:250px;;
+}
+
+.cryoliOrder{
+    order: 2;
+}
+
+@media all and (max-width: 480px){
+    .containerImg{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cryoliOrder{
+        order: -1;
+    }
+}
+
+
+@media all and (max-width: 780px){
+    .containerImg{
+        flex-wrap: wrap;
+    }
+}
+
+
